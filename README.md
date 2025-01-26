@@ -7,7 +7,7 @@ Com a funcionalidade para gerar um relatório CSV tendo a relação de filmes al
 
 ## Para executar o projeto
 Apos baixar o fonte, é necessario atualizar a string de conexão como na imagem abaixo:
-1° ![connectionString](https://github.com/user-attachments/assets/57c306ec-597b-4eae-83e4-1e5695016530)
+- 1° ![connectionString](https://github.com/user-attachments/assets/57c306ec-597b-4eae-83e4-1e5695016530)
 
 
 
