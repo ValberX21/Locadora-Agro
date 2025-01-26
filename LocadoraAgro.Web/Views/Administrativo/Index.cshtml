@@ -1,0 +1,34 @@
+﻿@model LocadoraAgro.Models.ViewModel.ViewLocacao
+
+@{
+    ViewData["Title"] = "Pg.Administrativa";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gerenciamento de filmes Alugados</h1>
+    <p>Visualize e acompanhe todos os DVDs atualmente alugados pela locadora</p>
+</div>
+
+<div class="container mt-5">
+    <table class="table table-striped table-bordered mt-4">
+        <thead class="table-dark">
+            <tr>
+                <th>Nome do filme</th>
+                <th>Locatario</th>
+                <th>Dt.Devolução</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var filme in Model.Locacoes)
+            {
+                <tr>
+                    <td>@filme.Filme</td>
+                    <td>@filme.Locatario</td>
+                    <td>@filme.dataDevolucao.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        </tbody>
+        <a asp-action="geraExcel" asp-controller="Home" class="btn btn-success btn-sm">Listar filmes alugados X disponiveis</a>
+    </table>
+</div>

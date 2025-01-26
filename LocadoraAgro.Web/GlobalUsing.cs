@@ -1,0 +1,9 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using LocadoraAgro.Data.Repository;
+global using Locadora.Data.Repository;
+global using LocadoraAgro.Data.Models;
+global using LocadoraAgro.Models;
+global using LocadoraAgro.Models.ViewModel;
+global using System.Text;
+global using Locadora.Data.Data;

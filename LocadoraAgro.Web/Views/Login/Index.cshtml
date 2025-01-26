@@ -1,0 +1,26 @@
+﻿@model LocadoraAgro.Models.ViewModel.ViewUserLogin
+
+@{
+    ViewData["Login"] = "Login Page";
+}
+
+<form asp-action="Login" class="w-50">
+    <div class="login-box">
+
+        <h1>Login</h1>
+        <form asp-action="Login" method="post">
+
+            <label for="FullName">Nome</label>
+            <input type="text" asp-for="Nome" required>
+
+            <label for="password">Senha</label>
+            <input type="password" asp-for="Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+</form>
+
+
+
